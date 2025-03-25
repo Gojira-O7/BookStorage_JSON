@@ -1,5 +1,4 @@
 package com.example;
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -8,17 +7,16 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
-public class BücherMethode {
-    String DATEIPFAD = "/home/silas/Projekte/vscode_projekte/uni_projekte/buecherregal-maven/data/bücher.json";
+public class BuecherMethode {
+    String DATEIPFAD = "buecherregal-maven/data/buecher.json";
     Scanner scanner = new Scanner(System.in);    
     List<Book> books;
 
-    public BücherMethode() {
+    public BuecherMethode() {
         dataiExist();
 
         boolean start = true;
@@ -30,7 +28,7 @@ public class BücherMethode {
             if (auswahl == 1) {
                 books = loadBooks();
                 
-                System.out.println("Neues Buch hinzufügen:");
+                System.out.println("Neues Buch hinzufuegen:");
                 System.out.print("Titel: ");
                 String titel = scanner.nextLine();
                 System.out.print("Autor: ");
@@ -68,10 +66,9 @@ public class BücherMethode {
                     System.out.println("Seiten: " + buch.getSeiten());
                     System.out.println("Verlag: " + buch.getVerlag());
                     System.out.println("Online-Adresse: " + buch.getOnlineAdresse());
-                    System.out.println("------------------------------------------");
+                    System.out.println("-----------------------------------------------------------------");
                 }
             } else if (auswahl == 3) {
-                start = false;
                 return;
             }
         }
@@ -82,7 +79,7 @@ public class BücherMethode {
         // Datei-Objekt erstellen
         File datei = new File(DATEIPFAD);
 
-        //checked ob bücher.json existiert
+        //checked ob buecher.json existiert
         if (datei.exists()) {
             System.out.println(" ");
             System.out.println("Datei gefunden: " + datei.getAbsolutePath());
@@ -94,7 +91,7 @@ public class BücherMethode {
         System.out.println(" ");
     }
 
-    public List<Book> loadBooks() {
+    private List<Book> loadBooks() {
         try (FileReader reader = new FileReader(DATEIPFAD)) {
             Gson gson = new Gson();
             Type listType = new TypeToken<List<Book>>(){}.getType();
@@ -105,7 +102,7 @@ public class BücherMethode {
         }
     }
 
-    public void saveBooks(List<Book> books) {
+    private void saveBooks(List<Book> books) {
         try (FileWriter writer = new FileWriter(DATEIPFAD)) {
             Gson gson = new GsonBuilder().setPrettyPrinting().create(); // Gson mit Pretty Printing konfigurieren
             gson.toJson(books, writer);
@@ -117,21 +114,21 @@ public class BücherMethode {
     public int getAuswahl() {
         int choice;
         while (true) {
-            System.out.print("Auswahl: Hinzufügen [1], Liste lesen [2], Beenden [3]");
+            System.out.print("Auswahl: Hinzufuegen [1], Liste lesen [2], Beenden [3]");
             System.out.print(" ");
             System.out.print("Deine Wahl: ");
 
-            if (scanner.hasNextInt()) { // Prüft, ob eine Zahl eingegeben wurde
+            if (scanner.hasNextInt()) { // Prueft, ob eine Zahl eingegeben wurde
                 choice = scanner.nextInt();
                 scanner.nextLine();
-                if (choice >= 1 && choice <= 3) { // Überprüft, ob die Zahl gültig ist
+                if (choice >= 1 && choice <= 3) { // ueberprueft, ob die Zahl gueltig ist
                     return choice;
                 } else {
-                    System.out.println("Ungültige Auswahl. Bitte wähle 1, 2 oder 3.");
+                    System.out.println("Ungueltige Auswahl. Bitte wähle 1, 2 oder 3.");
                 }
             } else {
-                System.out.println("Ungültige Eingabe. Bitte eine Zahl eingeben.");
-                scanner.next(); // Ungültige Eingabe verwerfen
+                System.out.println("Ungueltige Eingabe. Bitte eine Zahl eingeben.");
+                scanner.next(); // Ungueltige Eingabe verwerfen
             }
         }
     }
