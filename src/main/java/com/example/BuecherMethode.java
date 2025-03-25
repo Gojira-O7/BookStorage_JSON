@@ -7,12 +7,13 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
 public class BuecherMethode {
-    String DATEIPFAD = "buecherregal-maven/data/buecher.json";
+    String DATEIPFAD = "data/buecher.json";
     Scanner scanner = new Scanner(System.in);    
     List<Book> books;
 
