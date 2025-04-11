@@ -77,10 +77,8 @@ public class BuecherMethode {
     }
 
     public void dataiExist() {
-        // Datei-Objekt erstellen
         File datei = new File(DATEIPFAD);
 
-        //checked ob buecher.json existiert
         if (datei.exists()) {
             System.out.println(" ");
             System.out.println("Datei gefunden: " + datei.getAbsolutePath());
@@ -105,7 +103,7 @@ public class BuecherMethode {
 
     private void saveBooks(List<Book> books) {
         try (FileWriter writer = new FileWriter(DATEIPFAD)) {
-            Gson gson = new GsonBuilder().setPrettyPrinting().create(); // Gson mit Pretty Printing konfigurieren
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
             gson.toJson(books, writer);
         } catch (IOException e) {
             e.printStackTrace();
@@ -119,17 +117,17 @@ public class BuecherMethode {
             System.out.print(" ");
             System.out.print("Deine Wahl: ");
 
-            if (scanner.hasNextInt()) { // Prueft, ob eine Zahl eingegeben wurde
+            if (scanner.hasNextInt()) {
                 choice = scanner.nextInt();
                 scanner.nextLine();
-                if (choice >= 1 && choice <= 3) { // ueberprueft, ob die Zahl gueltig ist
+                if (choice >= 1 && choice <= 3) {
                     return choice;
                 } else {
                     System.out.println("Ungueltige Auswahl. Bitte wähle 1, 2 oder 3.");
                 }
             } else {
                 System.out.println("Ungueltige Eingabe. Bitte eine Zahl eingeben.");
-                scanner.next(); // Ungueltige Eingabe verwerfen
+                scanner.next();
             }
         }
     }

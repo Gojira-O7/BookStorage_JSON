@@ -1,77 +1,76 @@
 [
-    {
-      "titel": "A classification of SQL-injection attacks and countermeasures",
-      "autor": "William G.J. Halfond, Jeremy Viegas, Alessandro Orso",
-      "institution": "College of Computing, Georgia Institute of Technology",
-      "jahr": 2006,
-      "bände": "",
-      "seiten": "",
-      "verlag": "",
-      "onlineAdresse": "https://sites.cc.gatech.edu/fac/Alex.Orso/papers/halfond.viegas.orso.ISSSE06.pdf"
-    },
-    {
-      "titel": "Detection and Prevention of SQL Injection attack",
-      "autor": "Manish Kumar, L. Indu",
-      "institution": "P. B. College of Engineering",
-      "zeitschrift": "International Journal of Computer Science and Information Technologies (IJCSIT)",
-      "jahr": 2014,
-      "bände": "vol. 5",
-      "seiten": "374-377",
-      "verlag": "",
-      "onlineAdresse": "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=9a06fb5a822f8c30220a3047d6c8138fc3697622"
-    },
-    {
-      "titel": "sqlmap: automatic SQL injection and database takeover tool",
-      "autor": "Bernado Damele A. G., Miroslav Stamper",
-      "institution": "",
-      "jahr": "",
-      "bände": "",
-      "seiten": "",
-      "verlag": "",
-      "onlineAdresse": "https://sqlmap.org/"
-    },
-    {
-      "titel": "VL 02a - Know your enemy - Bedrohungen der Informationssicherheit",
-      "autor": "Mouad Lakhroufi",
-      "institution": "",
-      "jahr": 2022,
-      "bände": "",
-      "seiten": "",
-      "verlag": "",
-      "onlineAdresse": "https://quizlet.com/de/705332628/02a-know-your-enemy-bedrohungen-der-informationssicherheit-flash-cards/"
-    },
-    {
-      "titel": "Detection and prevention of SQLI attacks and developing compressive framework using machine learning and hybrid techniques",
-      "autor": "Demilie, Wubetu Barud; Deriba, Fitsum Gizachew",
-      "institution": "",
-      "zeitschrift": "J Big Data (Journal of Big Data)",
-      "jahr": 2022,
-      "bände": "",
-      "seiten": "1–30",
-      "verlag": "SpringerOpen",
-      "onlineAdresse": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-022-00678-0"
-    },
-    {
-      "titel": "Leitfaden zur Entwicklung sicherer Webanwendungen",
-      "autor": "SEC Consult Deutschland Unternehmensberatung",
-      "institution": "Bundesamt für Sicherheit in der Informationstechnik",
-      "zeitschrift": "",
-      "jahr": 2013,
-      "bände": "",
-      "seiten": "",
-      "verlag": "",
-      "onlineAdresse": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Studien/Webanwendungen/Webanw_Auftragnehmer.pdf?__blob=publicationFile&v=2"
-    },
-    {
-      "titel": "SQL injection Cheat Sheet",
-      "autor": "Welekwe, Amakiri",
-      "institution": "",
-      "zeitschrift": "Comparitech",
-      "jahr": 2023,
-      "bände": "",
-      "seiten": "",
-      "verlag": "",
-      "onlineAdresse": "https://www.comparitech.com/net-admin/sql-injection-cheat-sheet/"
-    }
-  ]
-  
+  {
+    "titel": "A classification of SQL-injection attacks and countermeasures",
+    "autor": "William G.J. Halfond, Jeremy Viegas, Alessandro Orso",
+    "institution": "College of Computing, Georgia Institute of Technology",
+    "jahr": "2006",
+    "bände": "",
+    "seiten": "",
+    "verlag": "",
+    "onlineAdresse": "https://sites.cc.gatech.edu/fac/Alex.Orso/papers/halfond.viegas.orso.ISSSE06.pdf"
+  },
+  {
+    "titel": "Detection and Prevention of SQL Injection attack",
+    "autor": "Manish Kumar, L. Indu",
+    "institution": "P. B. College of Engineering",
+    "zeitschrift": "International Journal of Computer Science and Information Technologies (IJCSIT)",
+    "jahr": "2014",
+    "bände": "vol. 5",
+    "seiten": "374-377",
+    "verlag": "",
+    "onlineAdresse": "https://citeseerx.ist.psu.edu/document?repid\u003drep1\u0026type\u003dpdf\u0026doi\u003d9a06fb5a822f8c30220a3047d6c8138fc3697622"
+  },
+  {
+    "titel": "sqlmap: automatic SQL injection and database takeover tool",
+    "autor": "Bernado Damele A. G., Miroslav Stamper",
+    "institution": "",
+    "jahr": "",
+    "bände": "",
+    "seiten": "",
+    "verlag": "",
+    "onlineAdresse": "https://sqlmap.org/"
+  },
+  {
+    "titel": "VL 02a - Know your enemy - Bedrohungen der Informationssicherheit",
+    "autor": "Mouad Lakhroufi",
+    "institution": "",
+    "jahr": "2022",
+    "bände": "",
+    "seiten": "",
+    "verlag": "",
+    "onlineAdresse": "https://quizlet.com/de/705332628/02a-know-your-enemy-bedrohungen-der-informationssicherheit-flash-cards/"
+  },
+  {
+    "titel": "Detection and prevention of SQLI attacks and developing compressive framework using machine learning and hybrid techniques",
+    "autor": "Demilie, Wubetu Barud; Deriba, Fitsum Gizachew",
+    "institution": "",
+    "zeitschrift": "J Big Data (Journal of Big Data)",
+    "jahr": "2022",
+    "bände": "",
+    "seiten": "1–30",
+    "verlag": "SpringerOpen",
+    "onlineAdresse": "https://journalofbigdata.springeropen.com/articles/10.1186/s40537-022-00678-0"
+  },
+  {
+    "titel": "Leitfaden zur Entwicklung sicherer Webanwendungen",
+    "autor": "SEC Consult Deutschland Unternehmensberatung",
+    "institution": "Bundesamt für Sicherheit in der Informationstechnik",
+    "zeitschrift": "",
+    "jahr": "2013",
+    "bände": "",
+    "seiten": "",
+    "verlag": "",
+    "onlineAdresse": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Studien/Webanwendungen/Webanw_Auftragnehmer.pdf?__blob\u003dpublicationFile\u0026v\u003d2"
+  },
+  {
+    "titel": "SQL injection Cheat Sheet",
+    "autor": "Welekwe, Amakiri",
+    "institution": "",
+    "zeitschrift": "Comparitech",
+    "jahr": "2023",
+    "bände": "",
+    "seiten": "",
+    "verlag": "",
+    "onlineAdresse": "https://www.comparitech.com/net-admin/sql-injection-cheat-sheet/"
+  }
+]
